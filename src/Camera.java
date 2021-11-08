@@ -27,18 +27,16 @@ public class Camera {
     }
 
     public void update(double time){
-/*
+
         this.ax= 1*(hero.getX()-this.x)-1.2*(10);
         System.out.println("ax ="+ax);
         this.vx+=ax*time;
         this.x+=vx*time;
 
- */
-
 
 
         //SANS RESSORT
-       x=hero.getAnime().getX()-50;
+       //x=hero.getAnime().getX()-50;
         hero.getAnime().setX(hero.getAnime().getX()-this.x+100);
     }
 

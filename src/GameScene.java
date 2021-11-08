@@ -41,7 +41,6 @@ public class GameScene extends Scene {
             public void handle(long time) {
                 double now = (time-clong.V)/600000000.0;
                 System.out.println(now);
-
                     clong.V = time;
 
                     if(Deku.getMood()==1){
