@@ -54,12 +54,13 @@ public class GameScene extends Scene {
                     cam.update(now);
                     update(now);
 
-                    if (Deku.getHitBox().intersects((Vilain0.getHitBox()))){
+                    if (Deku.getHitBox().intersects((List.get(Vilain0.getNum()).getHitBox()))){
                         System.out.println(("COLLISION COLLISION COLLISION COLLISION COLLISION!!!"));
                     }
-                if (Deku.getHitBox().intersects((Vilain1.getHitBox()))){
-                    System.out.println(("COLLISION COLLISION COLLISION COLLISION COLLISION!!!"));
-                }
+
+                    if (Deku.getHitBox().intersects((Vilain1.getHitBox()))){
+                        System.out.println(("COLLISION COLLISION COLLISION COLLISION COLLISION!!!"));
+                    }
 
 
             }
@@ -77,6 +78,7 @@ public class GameScene extends Scene {
       root.getChildren().add(left.getIm());
       root.getChildren().add(right.getIm());
       root.getChildren().add(Deku.getAnime());
+      //root.getChildren().add(List.get(Vilain0.getNum()).getAnime());
       root.getChildren().add(Vilain0.getAnime());
       root.getChildren().add(Vilain1.getAnime());
     }
