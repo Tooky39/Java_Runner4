@@ -40,8 +40,11 @@ public class staticThing {
         Y = y;
     }
 
+    public void setIm(ImageView im) {
+        this.im = im;
+    }
 
-    public void update(long time,int offset, Camera camera){
+    public void update(long time, int offset, Camera camera){
 
         this.im.setViewport(new Rectangle2D(0,0,800,400));
 

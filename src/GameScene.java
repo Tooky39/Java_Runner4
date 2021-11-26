@@ -13,6 +13,9 @@ public class GameScene extends Scene {
     private Camera cam;
     private static staticThing left = new staticThing(0,0, "desert.png");
     private static staticThing right = new staticThing(800,0, "desert.png");
+    private static staticThing life = new staticThing(0,0, "coeur.png");
+    private static staticThing life2 = new staticThing(50,0, "coeur.png");
+    private static staticThing life3 = new staticThing(100,0, "coeur.png");
     private Hero Deku;
     private Foe Vilain0= new Foe(0,800 ,200);
     private Foe Vilain1= new Foe(0,800,200);
@@ -56,6 +59,7 @@ public class GameScene extends Scene {
 
                     if (Deku.getHitBox().intersects((List.get(Vilain0.getNum()).getHitBox()))){
                         System.out.println(("COLLISION COLLISION COLLISION COLLISION COLLISION!!!"));
+                        //life3.setIm(null);
                     }
 
                     if (Deku.getHitBox().intersects((Vilain1.getHitBox()))){
@@ -77,6 +81,9 @@ public class GameScene extends Scene {
 
       root.getChildren().add(left.getIm());
       root.getChildren().add(right.getIm());
+        root.getChildren().add(life.getIm());
+        root.getChildren().add(life2.getIm());
+        root.getChildren().add(life3.getIm());
       root.getChildren().add(Deku.getAnime());
       //root.getChildren().add(List.get(Vilain0.getNum()).getAnime());
       root.getChildren().add(Vilain0.getAnime());
