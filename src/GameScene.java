@@ -30,8 +30,7 @@ public class GameScene extends Scene {
         super(root, width, height, depthBuffer);
         Deku = new Hero(50,240,0);
         cam =new Camera(0,0,Deku);
-        //myArray[0]=Vilain0;
-        //myArray[1]=Vilain1;
+
         List = new ArrayList<>();
         List.add(Vilain0);
         List.add(Vilain1);
